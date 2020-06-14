@@ -5,13 +5,10 @@
 arr = [10, 15, 3, 7]
 k = 17
 
-possible_members = dict()
+possible_pairs = dict()
 
 for x in arr:
-    possible_members[str(x)] = k - 10
-
-for x in arr:
-    if possible_members[str(x)] == k - x:
-        print (x, possible_members[str(x)])
+    possible_pairs[str(x)] = k - 10
+    if possible_pairs[str(x)] == k - x:
+        print (x, possible_pairs[str(x)])
         break;
-        
